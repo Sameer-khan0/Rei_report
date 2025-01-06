@@ -101,6 +101,9 @@ body {
 }
 
 @media (max-width: 480px) {
+  .page-layout-inner-container {
+    padding: 0rem;
+  }
   .header-text-container {
     font-size: 0.7em;
   }

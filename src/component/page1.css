@@ -122,6 +122,7 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  flex-direction: column;
   background-color: #ffffff;
   border: 1px solid #aaaaaa;
   cursor: pointer;
