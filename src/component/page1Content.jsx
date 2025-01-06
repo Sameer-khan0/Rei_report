@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import "./style/page1.css";
+import { useState } from "react";
+import "./page1.css";
 import {
   FaBed,
   FaBath,
