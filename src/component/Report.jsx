@@ -29,7 +29,6 @@ const UnifiedPage = ({
 
         {/* Footer */}
         <div className="footer">
-          <p className="footer-text">© 2025 Your Company. All rights reserved.</p>
           <img src={logo2} alt="Company Logo" className="footer-logo" />
         </div>
       </div>
@@ -51,7 +50,6 @@ const UnifiedPage = ({
 
         {/* Footer */}
         <div className="footer">
-          <p className="footer-text">© 2025 Your Company. All rights reserved.</p>
           <img src={logo2} alt="Company Logo" className="footer-logo" />
         </div>
       </div>
