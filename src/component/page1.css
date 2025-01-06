@@ -1,4 +1,4 @@
-/* Enhanced and Responsive Page1Content.css */
+/* Fixed Layout with px instead of rem */
 
 .container {
   display: flex;
@@ -15,7 +15,6 @@
 .profileBox {
   flex: 1 1 45%;
   padding: 10px;
-  border: 3px solid #4caf50;
   border-radius: 10px;
   background-color: #ffffff;
   display: flex;
@@ -25,7 +24,7 @@
 
 .profileTitle {
   font-weight: bold;
-  font-size: 1.5em;
+  font-size: 24px;
   margin-bottom: 15px;
   color: #333;
 }
@@ -48,7 +47,7 @@
   border-radius: 10px;
   padding: 15px;
   display: flex;
-  height: 15rem;
+  height: 240px;
   align-items: center;
   justify-content: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -66,18 +65,19 @@
   color: #333;
   background-color: transparent;
   padding: 10px 20px;
-  font-size: 0.9em;
+  font-size: 16px;
   border: 1px solid #ccc;
   border-radius: 6px;
   cursor: pointer;
   transition: all 0.3s ease;
 }
+
 .Fbutton {
   color: white;
-  background-color: black;
+  background-color: #2fb62f;
   font-weight: bold;
   padding: 10px 20px;
-  font-size: 0.9em;
+  font-size: 16px;
   border: 1px solid #ccc;
   border-radius: 6px;
   cursor: pointer;
@@ -92,10 +92,8 @@
 .dropdownsRow {
   display: flex;
   flex-wrap: wrap;
-  /* gap: 10px; */
   justify-content: space-between;
   align-items: center;
-  padding: 0 15px;
 }
 
 .dropdown {
@@ -115,24 +113,36 @@
 .subSection {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 15px;
-  padding: 15px;
-  background-color: #ffffff;
-  border-radius: 10px;
-  border: 1px solid #ddd;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  gap: 10px;
 }
 
 .subItem {
   text-align: center;
   border-radius: 8px;
-  padding: 12px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
   background-color: #ffffff;
-  border: 1px solid #ccc;
+  border: 1px solid #aaaaaa;
   cursor: pointer;
   transition: border 0.3s ease, transform 0.2s ease;
 }
-
+.subItem.head {
+  text-align: center;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #ffffff;
+  cursor: pointer;
+  transition: border 0.3s ease, transform 0.2s ease;
+}
+.rightsubsec {
+  padding-right: 10px;
+}
+.leftsubsec {
+  color: #2fb62f;
+}
 .subItem.selected {
   border: 2px solid #4caf50;
   box-shadow: 0 4px 8px rgba(76, 175, 80, 0.2);
@@ -140,45 +150,45 @@
 
 .subItemHeader {
   font-weight: bold;
-  font-size: 0.9em;
+  font-size: 15px;
   color: #333;
 }
 
-/* Responsive Adjustments */
 @media (max-width: 768px) {
   .topContent {
-      flex-direction: column;
+    flex-direction: column;
   }
 
-  .profileBox, .imageBox {
-      flex: 1 1 100%;
+  .profileBox,
+  .imageBox {
+    flex: 1 1 100%;
   }
 
   .propertyGrid {
-      grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
   }
 
   .dropdownsRow {
-      flex-direction: column;
-      padding: 0;
+    flex-direction: row;
+    padding: 0;
   }
 
   .subSection {
-      grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
 @media (max-width: 480px) {
   .profileTitle {
-      font-size: 1.2em;
+    font-size: 1.2em;
   }
 
   .button {
-      font-size: 0.8em;
-      padding: 8px 16px;
+    font-size: 0.8em;
+    padding: 8px 16px;
   }
 
   .dropdown {
-      flex: 1 1 100%;
+    flex: 1 1 100%;
   }
 }

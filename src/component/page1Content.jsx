@@ -84,11 +84,11 @@ const Page1Content = () => {
         ))}
       </div>
       <div className="section">
-        <div className="subSection">
+        <div className="subSection" style={{paddingLeft:"15%",paddingRight:"15%"}}>
           {["Summer", "Annual", "Winter"].map((season) => (
             <div
               key={season}
-              className={`subItem ${selectedSeason === season ? "selected" : ""}`}
+              className={`subItem ${selectedSeason === season ? "selected" : "head"}`}
               onClick={() => handleSeasonClick(season)}
             >
               <p className="subItemHeader">{season}</p>
@@ -98,9 +98,13 @@ const Page1Content = () => {
         <div className="subSection">
           {Array.from({ length: 9 }, (_, index) => (
             <div key={index} className="subItem">
+              <div className="leftsubsec">
               <h3 className="greenText">Feature {index + 1}</h3>
+              </div>
+              <div className="rightsubsec">
               <p className="grayText">ibe Co2/yr</p>
               <p className="grayText">ibe Co2/yr</p>
+              </div>
             </div>
           ))}
         </div>
