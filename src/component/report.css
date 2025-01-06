@@ -89,7 +89,7 @@ body {
 /* Responsive Adjustments */
 @media (max-width: 768px) {
   .header-logo {
-    height: 50px;
+    height: 45px;
   }
 
   .footer-logo {
