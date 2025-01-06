@@ -1,8 +1,7 @@
-import React from "react";
 import logo from "./utils/logo1.png";
 import logo2 from "./utils/logo2.png";
 import Page1Content from "./page1Content";
-import "./pageLayout.css";
+import "./style/pageLayout.css";
 
 const UnifiedPage = ({
   date = "January 5, 2025",
